@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    
+    <arg name="lidar_height_" default="1" />
+
+    <node pkg="stairs_recognition" type="stairs_recognition" name="stairs_recognition" output="screen">
+        <remap from="/rslidar_points" to="/rslidar_points" />
+
+  	<param name="lidar_height" value="$(arg lidar_height_)"/>
+
+    </node>
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_stairs_recognition" args="-d $(find stairs_recognition)/rviz_cfg/stairs_recognition.rviz" />
+    </group>
+
+</launch>
