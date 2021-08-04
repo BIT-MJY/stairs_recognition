@@ -21,6 +21,10 @@ roslaunch stairs_recognition stairs_recognition.launch
 
 <img src="https://github.com/BIT-MJY/stairs_recogniton/blob/main/stairs_recognition.png">
 
+## Author
+Developed by Junyi Ma, Beijing Institute of Technology.
+
+
 
 
 
