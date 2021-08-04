@@ -1,5 +1,5 @@
 # stairs_recogniton
-Recognize stairs with lidar.
+Recognize stairs with lidar. Project the laser points to X-Z plane and use least squares for linear fitting.
 
 ## Dependencies
 * PCL 1.8
